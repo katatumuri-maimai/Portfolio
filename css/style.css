@@ -219,7 +219,7 @@ h2{
  }
 
  #creative .product_text {
-     font-size: 0.5rem;
+     font-size: 0.8rem;
      padding: 20px;
  }
 
@@ -244,4 +244,26 @@ h2{
 
  #creative .skill_tag_main {
      background-color: #CE86A8;
+ }
+
+
+ /*
+ * character 
+ */
+
+ #character .character_box{
+     margin: 10px;
+     /* position: relative; */
+ }
+
+ #character .character_img{
+     width: 15vw;
+     height: 15vw;
+ }
+
+ #character .character_img_wrap {
+     background-color: #FFFFFF;
+     padding: 30px;
+     border-radius: 50%;
+     margin-bottom: 10px;
  }
