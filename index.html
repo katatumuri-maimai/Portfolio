@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav id="nav">
-            <div class="nav_wrap">
+            <div class="nav_wrap section_wrap">
                 <div class="logo flex_row">
                     <img src="./img/logo.png" class="logo_img">
                     <h1>Portfolio</h1>
@@ -36,7 +36,7 @@
     </header>
     <main>
         <section id="hero">
-            <div class="hero_wrap">
+            <div class="hero_wrap section_wrap">
                 <div class="hero_img_wrap flex_column">
                     <img src="./img/hero_img.svg" class="hero_img" alt="Hero画像">
                     <h2>Katatumuri-maimai</h2>
@@ -50,7 +50,7 @@
             </div>
         </section>
         <section id="about">
-            <div class="about_wrap">
+            <div class="about_wrap section_wrap">
                 <div class="title">
                     <h2>About</h2>
                     <p>私のこと</p>
@@ -69,97 +69,137 @@
 
         </section>
         <section id="creative">
-            <div class="creative_wrap">
+            <div class="creative_wrap section_wrap">
                 <div class="title">
                     <h2>Creative</h2>
                     <p>制作物</p>
                 </div>
                 <div class="products">
                     <h3>Products</h3>
-                    <div class="flex_box">
+                    <div class="product_wrap flex_box">
                         <div id="markdown_editor" class="product_card">
-                            <h4>マークダウンエディタ</h4>
-                            <img src="./img/markdown_editor.png" alt="マークダウンエディタ">
-                            <div class="product_text">
-                                <p>マークダウン記法で書くことができるメモアプリ。</p>
-                                <p>Andoroid/iOSに対応。</p>
-                                <p>基本的なマークダウン記法に対応しており、文字装飾や画像表示がプレビュー画面で可能。</p>
-                                <p>テキストデータのインポート・エクスポートができ、PDFも保存・印刷できる。</p>
-                            </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main">React Native</p>
-                                <p class="skill_tag">Expo</p>
-                                <p class="skill_tag">WSL</p>
-                                <p class="skill_tag">VScode</p>
-                                <p>…他</p>
-                            </div>
-                        </div>
-                        <div id="i" class="product_card">
-                            <h4></h4>
-                            <img src="./img/" alt="">
-                            <div class="product_text">
+                            <div class="product_main_wrap">
+                                <h4>マークダウンエディタ</h4>
+                                <img src="./img/markdown_editor.png" class="product_img" alt="マークダウンエディタ">
+                                <div class="product_text">
+                                    <p>マークダウン記法で書くことができるメモアプリ。</p>
+                                    <p>Andoroid/iOSに対応。</p>
+                                    <p>基本的なマークダウン記法に対応しており、文字装飾や画像表示がプレビュー画面で可能。</p>
+                                    <p>テキストデータのインポート・エクスポートができ、PDFも保存・印刷できる。</p>
+                                </div>
 
                             </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main"></p>
-                                <p class="skill_tag"></p>
-                                <p>…他</p>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">React Native</p>
+                                    <p class="skill_tag">Expo</p>
+                                    <p class="skill_tag">WSL</p>
+                                    <p class="skill_tag">VScode</p>
+                                    <p>…他</p>
+                                </div>
                             </div>
                         </div>
-                        <div id="i" class="product_card">
-                            <h4></h4>
-                            <img src="./img/" alt="">
-                            <div class="product_text">
+                        <div id="wp_demo2" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>WordPressデモサイト</h4>
+                                <img src="./img/wp_demo2.png" class="product_img" alt="ワードプレスデモサイト2">
+                                <div class="product_text">
+                                    <p>フラワーアレンジメント教室をイメージした WordPressサイトを作成。</p>
+                                    <p>レスポンシブ対応。</p>
+                                    <p>お問い合わせフォームや地図を表示。</p>
+                                </div>
 
                             </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main"></p>
-                                <p class="skill_tag"></p>
-                                <p>…他</p>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">WordPress</p>
+                                    <p class="skill_tag skill_tag_main">Figma</p>
+                                    <p class="skill_tag">HTML</p>
+                                    <p class="skill_tag">CSS</p>
+                                    <p>…他</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="utage_portfolio" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>ポートフォリオサイト</h4>
+                                <img src="./img/utage_portfolio.png" class="product_img" alt="UTAGEポートフォリオ">
+                                <div class="product_text">
+                                    <p>IT系コミュニティUTAGEのフロントエンドコースにてポートフォリオサイトを作成。</p>
+                                    <p>カンプデータをアレンジし、コーディングを行う。</p>
+                                </div>
+                            </div>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">HTML</p>
+                                    <p class="skill_tag skill_tag_main">CSS</p>
+                                    <p class="skill_tag">JavaScript</p>
+                                    <p class="skill_tag">VScode</p>
+                                    <p>…他</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="products">
-                        <div class="flex_box">
-                            <div id="i" class="product_card">
-                                <h4></h4>
-                                <img src="./img/" alt="">
+                    <div class="product_wrap flex_box">
+                        <div id="relaibless" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>リレー小説アプリ</h4>
+                                <img src="./img/RelaibleSS.png" class="product_img" alt="リレー小説アプリ">
                                 <div class="product_text">
-
+                                    <p>リアルタイムでリレー小説を作るゲームアプリ。</p>
+                                    <p>webのみに対応。</p>
+                                    <p>共有リンクでゲームルームに招待し、複数人で執筆が可能。</p>
+                                    <p>タイトルやジャンルがランダムに決まり、チャット風の画面で一人ずつ順番に執筆する。</p>
+                                    <p>ひとつ前の人の文章しか見えないため、全体像を予想しながら書く。</p>
+                                    <p>完成した小説は、テキストと画像で保存できる。</p>
                                 </div>
+                            </div>
+                            <div class="product_skills_wrap">
                                 <hr>
                                 <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
+                                    <p class="skill_tag skill_tag_main">React</p>
+                                    <p class="skill_tag">Python</p>
+                                    <p class="skill_tag">Docker</p>
+                                    <p class="skill_tag">VScode</p>
                                     <p>…他</p>
                                 </div>
                             </div>
-                            <div id="i" class="product_card">
-                                <h4></h4>
-                                <img src="./img/" alt="">
+                        </div>
+                        <div id="portfolio" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>現ポートフォリオサイト</h4>
+                                <img src="./img/portfolio.png" class="product_img" alt="現ポートフォリオサイト">
                                 <div class="product_text">
-
+                                    <p>制作物をまとめるためポートフォリオサイトを作成。</p>
                                 </div>
+                            </div>
+                            <div class="product_skills_wrap">
                                 <hr>
                                 <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
+                                    <p class="skill_tag skill_tag_main">HTML</p>
+                                    <p class="skill_tag skill_tag_main">CSS</p>
+                                    <p class="skill_tag">JavaScript</p>
+                                    <p class="skill_tag">AdobeXD</p>
                                     <p>…他</p>
                                 </div>
                             </div>
-                            <div id="i" class="product_card">
+                        </div>
+                        <div id="no_img" class="product_card">
+                            <div class="product_main_wrap">
                                 <h4></h4>
-                                <img src="./img/" alt="">
+                                <img src="./img/no_img.png" class="product_img" alt="Commingsoon">
                                 <div class="product_text">
-
+                                    <p>Commingsoon</p>
                                 </div>
+                            </div>
+                            <div class="product_skills_wrap">
                                 <hr>
                                 <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
+                                    <p class="skill_tag skill_tag_main">？</p>
+                                    <p class="skill_tag">？</p>
                                     <p>…他</p>
                                 </div>
                             </div>
@@ -168,95 +208,120 @@
                 </div>
                 <div class="products">
                     <h3>Design/Others</h3>
-                    <div class="flex_box">
-                        <div id="i" class="product_card">
-                            <h4></h4>
-                            <img src="./img/" alt="">
-                            <div class="product_text">
-
+                    <div class="product_wrap flex_box">
+                        <div id="nail_salon_design" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>ネイルサロンサイトデザイン</h4>
+                                <img src="./img/nail_salon_design.png" class="product_img" alt="ネイルサロンサイトデザイン">
+                                <div class="product_text">
+                                    <p>ネイルサロンサイトをイメージしたデザイン。</p>
+                                    <p>web制作の案件を探すための見本として作成。</p>
+                                    <p>華やかなイメージにしたかったので、濃いピンクを使用してデザインした。</p>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main"></p>
-                                <p class="skill_tag"></p>
-                                <p>…他</p>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">Figma</p>
+
+                                </div>
                             </div>
                         </div>
-                        <div id="i" class="product_card">
-                            <h4></h4>
-                            <img src="./img/" alt="">
-                            <div class="product_text">
-
+                        <div id="cleanup_agency_leaflet1" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>お片付け代行チラシ</h4>
+                                <img src="./img/cleanup_agency_leaflet1.png" class="product_img" alt="お片付け代行チラシ1">
+                                <div class="product_text">
+                                    <p>お片付け代行サービスのチラシとInstagram投稿用画像を作成</p>
+                                    <p>元の画像をアレンジして、キャッチコピーや料金表をわかりやすく変更。</p>
+                                    <p>LINEやSNSのアカウントのQRコードを追加。 </p>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main"></p>
-                                <p class="skill_tag"></p>
-                                <p>…他</p>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">Figma</p>
+                                </div>
                             </div>
                         </div>
-                        <div id="i" class="product_card">
-                            <h4></h4>
-                            <img src="./img/" alt="">
-                            <div class="product_text">
-
+                        <div id="cleanup_agency_leaflet2" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>お片付け代行チラシ</h4>
+                                <img src="./img/cleanup_agency_leaflet2.png" class="product_img" alt="お片付け代行チラシ2">
+                                <div class="product_text">
+                                    <p>お片付け代行サービスの流れを説明したもの。</p>
+                                    <p>提示された文章からチラシとInstagram投稿用画像を作成。</p>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="product_skills flex_row">
-                                <p class="skill_tag skill_tag_main"></p>
-                                <p class="skill_tag"></p>
-                                <p>…他</p>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">Figma</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="products">
-                        <div class="flex_box">
-                            <div id="i" class="product_card">
-                                <h4></h4>
-                                <img src="./img/" alt="">
+                    <div class="product_wrap flex_box">
+                        <div id="handmade_product_image" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>ハンドメイド商品画像</h4>
+                                <img src="./img/handmade_product_image.png" class="product_img" alt="ハンドメイド商品画像">
                                 <div class="product_text">
-
-                                </div>
-                                <hr>
-                                <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
-                                    <p>…他</p>
+                                    <p>ハンドメイド作品の商品画像を作成。</p>
+                                    <p>特に写真に力を入れている。</p>
+                                    <p>ミラーレスカメラで撮影し、その後Lightroomで色味の調節を行う。</p>
+                                    <p>文字入れや最終調節をCanvaで行う。</p>
                                 </div>
                             </div>
-                            <div id="i" class="product_card">
-                                <h4></h4>
-                                <img src="./img/" alt="">
-                                <div class="product_text">
-
-                                </div>
+                            <div class="product_skills_wrap">
                                 <hr>
                                 <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
-                                    <p>…他</p>
+                                    <p class="skill_tag skill_tag_main">Canva</p>
+                                    <p class="skill_tag">Lightroom</p>
+                                    <p class="skill_tag">Camera</p>
                                 </div>
                             </div>
-                            <div id="i" class="product_card">
-                                <h4></h4>
-                                <img src="./img/" alt="">
+                        </div>
+                        <div id="doll_outfit" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>ドールアウトフィット</h4>
+                                <img src="./img/doll_outfit.png" class="product_img" alt="ドールアウトフィット">
                                 <div class="product_text">
-
+                                    <p>1/6サイズのドール服を作成。</p>
+                                    <p>型紙から自作し、裁縫まで行う。</p>
                                 </div>
+                            </div>
+                            <div class="product_skills_wrap">
                                 <hr>
                                 <div class="product_skills flex_row">
-                                    <p class="skill_tag skill_tag_main"></p>
-                                    <p class="skill_tag"></p>
-                                    <p>…他</p>
+                                    <p class="skill_tag skill_tag_main">裁縫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="doll_parts" class="product_card">
+                            <div class="product_main_wrap">
+                                <h4>ドールパーツ作成</h4>
+                                <img src="./img/doll_parts.png" class="product_img" alt="ドールパーツ作成">
+                                <div class="product_text">
+                                    <p>主にアイチップという目のパーツを作成。</p>
+                                    <p>iPadで描いたオリジナルデザインを用い、UVレジンで成型。</p>
+                                </div>
+                            </div>
+                            <div class="product_skills_wrap">
+                                <hr>
+                                <div class="product_skills flex_row">
+                                    <p class="skill_tag skill_tag_main">UVレジン</p>
+                                    <p class="skill_tag">イラスト</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </section>
         <section id="character">
-            <div class="character_wrap">
+            <div class="character_wrap section_wrap">
                 <div class="title">
                     <h2>Character</h2>
                     <p>性格・強み</p>
@@ -265,7 +330,7 @@
 
         </section>
         <section id="interests">
-            <div class="interests_wrap">
+            <div class="interests_wrap section_wrap">
                 <div class="title">
                     <h2>Interests</h2>
                     <p>好きなもの</p>
@@ -274,7 +339,7 @@
 
         </section>
         <section id="career">
-            <div class="career_wrap">
+            <div class="career_wrap section_wrap">
                 <div class="title">
                     <h2>Career</h2>
                     <p>人生</p>
@@ -283,7 +348,7 @@
 
         </section>
         <section id="skills">
-            <div class="skills_wrap">
+            <div class="skills_wrap section_wrap">
                 <div class="title">
                     <h2>Skills</h2>
                     <p>できること</p>
@@ -292,7 +357,7 @@
 
         </section>
         <section id="contact">
-            <div class="contact_wrap">
+            <div class="contact_wrap section_wrap">
                 <div class="title">
                     <h2>Contact</h2>
                     <p>お問い合わせ</p>
