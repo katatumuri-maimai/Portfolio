@@ -267,3 +267,48 @@ h2{
      border-radius: 50%;
      margin-bottom: 10px;
  }
+
+ /*
+ * interests 
+ */
+ #interests .interest_card {
+     display: inline-block;
+     margin: 10px;
+ }
+
+ #interests .interests_box{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+
+ #interests .interest_img_wrap {
+     background-color: #FFF9FC;
+     padding: 30px;
+     border-radius: 50%;
+     width: 150px;
+     height: 150px;
+ }
+
+ #interests .interest_img {
+     margin: 0 auto;
+     width: auto;
+     height: 100%;
+ }
+
+ #interests .interest_text {
+     background-color: #F9DCEA;
+     width: 100px;
+     height: 50px;
+     line-height: 50px;
+     border-radius: 50%;
+     margin-left: -20px;
+     margin-top: -30px;
+     color: #92557C;
+ }
+
+ #interests .interest_text p {
+     color: #92557C;
+ }
