@@ -63,7 +63,7 @@ h2{
  }
 
  section {
-     padding: 50px 0;
+     padding: 70px 0;
      border-top-left-radius: 500px 100px;
      border-top-right-radius: 700px 150px;
      border-bottom-left-radius: 500px 100px;
@@ -119,6 +119,13 @@ h2{
     border-radius: 10px;
     box-shadow: #00000021 0px 10px 10px;
     z-index: 10000;
+    opacity : 1;
+    transition : all 300ms;
+}
+
+#nav.nav_close{
+    opacity : 0;
+    transition : all 300ms;
 }
 
 #nav .nav_wrap{

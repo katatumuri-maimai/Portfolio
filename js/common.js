@@ -14,3 +14,22 @@ function toggleMenu() {
 
 toggle_btn.addEventListener('click', toggleMenu, false);
 
+
+// navをスクロール量によって隠す
+const nav = document.querySelector("#nav");
+
+let start_pos = 0;
+let scroll_amount;
+
+window.onscroll = function () {
+    const current_pos = window.pageYOffset || document.documentElement.scrollTop;
+    scroll_amount = current_pos - start_pos;
+    start_pos = current_pos;
+
+    if (scroll_amount > 0) {
+        nav.classList.add("nav_close")
+    }else{
+        nav.classList.remove("nav_close")
+    }
+}
+
