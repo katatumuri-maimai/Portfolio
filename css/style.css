@@ -82,6 +82,7 @@ h2{
 
  .title{
      text-align: center;
+     margin-bottom: 40px;
  }
 
  .title h2,
@@ -102,6 +103,7 @@ h2{
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: #00000021 0px 10px 10px;
+    z-index: 10000;
 }
 
 #nav .nav_wrap{
@@ -311,4 +313,188 @@ h2{
 
  #interests .interest_text p {
      color: #92557C;
+ }
+
+
+ /*
+ * career 
+ */
+
+ #career .career_box{
+     position: relative;
+     height: auto;
+ }
+
+ #career svg{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+
+ #career .career_card {
+     background-color: #ce86a885 ;
+     color: #FFFFFF;
+     padding: 10px;
+     border-radius: 20px;
+     text-align: left;
+ }
+
+ #career .career_card h3{
+     text-align: center;
+ }
+
+ #career .career_card_wrap {
+     display: flex;
+     flex-direction: row;
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ #career .right {
+     justify-content: flex-end;
+ }
+
+ #career .left {
+     justify-content: flex-start;
+ }
+ 
+ #career .career_card {
+     width: 40%;
+ }
+
+
+ /*
+ * skills 
+ */
+
+
+ #skills .skills_box{
+     background-color: #FFFFFF;
+     padding: 40px;
+     border-radius: 20px;
+     width: 80%;
+     margin: 0 auto;
+     margin-bottom: 20px;
+ }
+
+ #skills .skills_box .flex_box{
+     margin-bottom: 40px;
+ }
+
+ #skills .skill_bar {
+     position: relative;
+     background-color: #FFFFFF;
+     width: 102px;
+     height: 102px;
+     border-radius: 50%;
+     border: solid #EBEBEB 3px;
+ }
+
+ #skills .skill_bar::before {
+     content: "";
+     display: block;
+     position: absolute;
+     width: 110px;
+     height: 110px;
+     top: -7px;
+     left: -7px;
+     border-radius: 50%;
+ }
+
+ #skills .skill_circle {
+     position: absolute;
+     background-color: #ffffff;
+     width: 90px;
+     height: 90px;
+     top: 3px;
+     left: 3px;
+     border-radius: 50%;
+     color: #E6BACD;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+
+ /* skills bar color & % */
+ #skills #skill_html::before {
+     background: conic-gradient(rgb(230, 186, 205) 80%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_css::before {
+     background: conic-gradient(rgb(251, 225, 172) 80%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_javascript::before {
+     background: conic-gradient(rgb(148, 242, 167) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_react::before {
+     background: conic-gradient(rgb(150, 187, 251) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_reactnative::before {
+     background: conic-gradient(rgb(181, 161, 236) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_python::before {
+     background: conic-gradient(rgb(243, 243, 142) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_docker::before {
+     background: conic-gradient(rgb(156, 187, 222) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_firebase::before {
+     background: conic-gradient(rgb(232, 181, 242) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_github::before {
+     background: conic-gradient(rgb(255, 209, 168) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_flutter::before {
+     background: conic-gradient(rgb(179, 233, 181) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ /* skills others bar color & % */
+ #skills #skill_adobexd::before {
+     background: conic-gradient(rgb(238, 196, 230) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_figma::before {
+     background: conic-gradient(rgb(251, 225, 172) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_lightroom::before {
+     background: conic-gradient(rgb(148, 242, 167) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_gimp::before {
+     background: conic-gradient(rgb(150, 187, 251) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_affinity::before {
+     background: conic-gradient(rgb(181, 161, 236) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_photo::before {
+     background: conic-gradient(rgb(243, 243, 142) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_handmade::before {
+     background: conic-gradient(rgb(156, 187, 222) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_hospitality::before {
+     background: conic-gradient(rgb(232, 181, 242) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_communitymanagement::before {
+     background: conic-gradient(rgb(255, 209, 168) 50%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills #skill_commingsoon::before {
+     background: conic-gradient(rgb(179, 233, 181) 50%, rgba(0, 128, 0, 0) 0%);
  }
