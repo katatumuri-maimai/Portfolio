@@ -42,6 +42,7 @@ h2{
      display: flex;
      flex-direction: row;
      align-items: center;
+     flex-wrap: wrap;
  }
 
  .flex_column {
@@ -58,7 +59,8 @@ h2{
      text-decoration: none;
  }
 
- a:link {
+ a:link,
+ a:visited {
      color: #8F617E;
  }
 
@@ -246,6 +248,30 @@ h2{
  #hero .scroll_btn{
      display: inline-block;
      padding: 0 10px;
+     animation: bound-anim 1s infinite;
+ }
+
+ @keyframes bound-anim {
+
+     0%,
+     100% {
+         top: 0;
+         transform: scale(1);
+     }
+
+     30% {
+         top: -60%;
+         transform: scale(0.96, 1.04);
+     }
+
+     60% {
+         transform: scale(1);
+     }
+
+     90% {
+         top: 0;
+         transform: scale(1.15, 0.9);
+     }
  }
 
  #hero .scroll_btn_text ,
@@ -258,9 +284,16 @@ h2{
  * about 
  */
 
+ #about .about_box {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
  #about .about_img,
  #about .about_text {
-     width: 40%;
+     width: 30%;
+     margin: 20px;
  }
 
  #about .about_text {
@@ -269,9 +302,34 @@ h2{
      border-radius: 10px;
  }
 
- #about .about_text p{
-     margin: 5px;
+  #about .about_text p {
+      margin: 5px;
+  }
+
+ #about p.name{
+     font-size: 2rem;
+     text-align: center;
  }
+
+ #about p.name_rubi{
+     font-size: 1.3rem;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ @media screen and (max-width: 767px) {
+     #about .about_box {
+         flex-direction: column;
+     }
+
+     #about .about_img,
+     #about .about_text {
+         width: 100%;
+         margin: 20px 0;
+     }
+ }
+
+
 
  /*
  * creative 
