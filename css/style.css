@@ -347,6 +347,10 @@ h2{
  * creative 
  */
 
+ .pointer {
+     cursor: pointer;
+ }
+
  #creative .products{
      margin-top: 50px;
  }
