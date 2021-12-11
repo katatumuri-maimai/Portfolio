@@ -21,15 +21,45 @@ const nav = document.querySelector("#nav");
 let start_pos = 0;
 let scroll_amount;
 
-window.onscroll = function () {
+function changeNavOpacity() {
     const current_pos = window.pageYOffset || document.documentElement.scrollTop;
     scroll_amount = current_pos - start_pos;
     start_pos = current_pos;
 
     if (scroll_amount > 0) {
         nav.classList.add("nav_close")
-    }else{
+    } else {
         nav.classList.remove("nav_close")
     }
 }
 
+
+//
+// creative
+//
+
+const section_list = document.querySelectorAll(".fadein");
+
+// 要素の絶対位置を返す関数
+function calcTopPosition(element) {
+    return element.getBoundingClientRect().top + window.pageYOffset;
+}
+
+function fadeinElements(){
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+
+    section_list.forEach(element => {
+        const top = calcTopPosition(element);
+        if (top < scrollPosition) {
+            element.classList.add('scrollin');
+        };
+    });
+}
+
+
+// スクロール時に実行する
+
+window.onscroll = function () {
+    changeNavOpacity();
+    fadeinElements();
+}

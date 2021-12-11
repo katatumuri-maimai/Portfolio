@@ -107,6 +107,18 @@ h2{
      margin: 0;
  }
 
+.fadein {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 1s ease 0s;
+}
+
+.fadein.scrollin {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease 0s;
+}
+
 
  /*
  * header 
@@ -292,7 +304,7 @@ h2{
 
  #about .about_img,
  #about .about_text {
-     width: 30%;
+     width: 40%;
      margin: 20px;
  }
 
@@ -350,6 +362,7 @@ h2{
  }
 
  #creative .product_card {
+     /* position: relative; */
      background-color: #FFFFFF;
      border-radius: 20px;
      width: 30%;
@@ -397,7 +410,6 @@ h2{
  #creative .skill_tag_main {
      background-color: #CE86A8;
  }
-
 
  @media screen and (max-width: 767px) {
      #creative .product_card {
