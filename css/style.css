@@ -764,6 +764,10 @@ section:nth-child(2n+1) .title p {
     padding: 20px;
 }
 
+#contact button{
+    border: 1px solid #8F617E;
+}
+
 
 
 #contact input[type="text"],
