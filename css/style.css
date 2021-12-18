@@ -631,83 +631,96 @@ h2{
 
 
  /* skills bar color & % */
- #skills #skill_html::before {
+ #skills .skill_html::before {
      background: conic-gradient(rgb(230, 186, 205) 80%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_css::before {
+ #skills .skill_css::before {
      background: conic-gradient(rgb(251, 225, 172) 80%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_javascript::before {
+ #skills .skill_javascript::before {
      background: conic-gradient(rgb(148, 242, 167) 60%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_react::before {
+ #skills .skill_react::before {
      background: conic-gradient(rgb(150, 187, 251) 40%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_reactnative::before {
+ #skills .skill_reactnative::before {
      background: conic-gradient(rgb(181, 161, 236) 40%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_python::before {
+ #skills .skill_python::before {
      background: conic-gradient(rgb(243, 243, 142) 20%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_docker::before {
+ #skills .skill_docker::before {
      background: conic-gradient(rgb(156, 187, 222) 20%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_firebase::before {
+ #skills .skill_firebase::before {
      background: conic-gradient(rgb(232, 181, 242) 20%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_github::before {
+ #skills .skill_github::before {
      background: conic-gradient(rgb(255, 209, 168) 50%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_flutter::before {
+ #skills .skill_flutter::before {
      background: conic-gradient(rgb(179, 233, 181) 20%, rgba(0, 128, 0, 0) 0%);
  }
 
  /* skills others bar color & % */
- #skills #skill_adobexd::before {
+ #skills .skill_adobexd::before {
      background: conic-gradient(rgb(238, 196, 230) 30%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_figma::before {
+ #skills .skill_figma::before {
      background: conic-gradient(rgb(251, 225, 172) 40%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_lightroom::before {
+ #skills .skill_lightroom::before {
      background: conic-gradient(rgb(148, 242, 167) 40%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_gimp::before {
+ #skills .skill_gimp::before {
      background: conic-gradient(rgb(150, 187, 251) 50%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_affinity::before {
+ #skills .skill_affinity::before {
      background: conic-gradient(rgb(181, 161, 236) 20%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_photo::before {
+ #skills .skill_photo::before {
      background: conic-gradient(rgb(243, 243, 142) 60%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_handmade::before {
+ #skills .skill_handmade::before {
      background: conic-gradient(rgb(156, 187, 222) 70%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_hospitality::before {
+ #skills .skill_hospitality::before {
      background: conic-gradient(rgb(232, 181, 242) 80%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_communitymanagement::before {
+ #skills .skill_communitymanagement::before {
      background: conic-gradient(rgb(255, 209, 168) 30%, rgba(0, 128, 0, 0) 0%);
  }
 
- #skills #skill_commingsoon::before {
+ #skills .skill_commingsoon::before {
      background: conic-gradient(rgb(179, 233, 181) 0%, rgba(0, 128, 0, 0) 0%);
+ }
+
+ #skills .skill_bar_before::before {
+     background: conic-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 0%);
+ }
+
+ #skills .skill_bar::before {
+     opacity: 1;
+     transition: all 4s ease 0s;
+ }
+
+ #skills .skill_bar.skill_bar_before::before {
+     opacity: 0;
  }
