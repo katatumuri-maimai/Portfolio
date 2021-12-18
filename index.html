@@ -127,8 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="utage_portfolio" class="product_card pointer"
-                            onClick="location.href='#'">
+                        <div id="utage_portfolio" class="product_card pointer" onClick="location.href='#'">
                             <div class="product_main_wrap">
                                 <h4>ポートフォリオサイト</h4>
                                 <img src="./img/utage_portfolio.png" class="product_img" alt="UTAGEポートフォリオ">
@@ -654,6 +653,26 @@
                 <div class="title">
                     <h2>Contact</h2>
                     <p>お問い合わせ</p>
+                </div>
+                <div class="contact_form">
+                    <form action="#" method="post">
+                        <input type="text" name="company" placeholder="企業名">
+                        <input type="text" name="name" placeholder="お名前*" required>
+                        <input type="email" name="mail" placeholder="メールアドレス*" required>
+                        <div>
+                            <label>
+                                <input type="radio" name="level" value="ok">お仕事のご相談
+                            </label>
+                            <label>
+                                <input type="radio" name="level" value="bad">お見積り
+                            </label>
+                            <label>
+                                <input type="radio" name="level" value="bad">まずは話をしたい
+                            </label>
+                        </div>
+                        <textarea name="comment" rows="4" placeholder="お問い合わせ内容を入力してください。*" required></textarea>
+                        <button type="button" class="pointer">送信内容の確認</button>
+                    </form>
                 </div>
             </div>
 
