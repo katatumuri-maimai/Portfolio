@@ -45,6 +45,10 @@ function calcTopPosition(element) {
     return element.getBoundingClientRect().top + window.pageYOffset;
 }
 
+function calcBottomPosition(element) {
+    return element.getBoundingClientRect().bottom + window.pageYOffset;
+}
+
 function fadeinElements(){
     const scrollPosition = window.pageYOffset + window.innerHeight;
 
@@ -56,10 +60,27 @@ function fadeinElements(){
     });
 }
 
+// 
+// skills
+// 
+const skill_list = document.querySelectorAll(".skill_bar");
+
+function changeSkillsBar() {
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+
+    skill_list.forEach(element => {
+        const bottom = calcBottomPosition(element);
+        
+        if (bottom < scrollPosition) {
+            element.classList.remove("skill_bar_before");
+        };
+    })
+}
 
 // スクロール時に実行する
 
 window.onscroll = function () {
     changeNavOpacity();
     fadeinElements();
+    changeSkillsBar();
 }
