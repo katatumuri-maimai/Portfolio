@@ -776,3 +776,12 @@ input[type="email"],
     height: 2rem;
     line-height: 0.1rem;
 }
+
+
+footer{
+    background-color: #8F617E;
+    color: #FFFFFF;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+}
