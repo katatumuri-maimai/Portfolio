@@ -659,9 +659,13 @@ section:nth-child(2n+1) .title p {
     background: conic-gradient(rgb(156, 187, 222) 20%, rgba(0, 128, 0, 0) 0%);
 }
 
-#skills .skill_firebase::before {
-    background: conic-gradient(rgb(232, 181, 242) 20%, rgba(0, 128, 0, 0) 0%);
+#skills .skill_php::before {
+    background: conic-gradient(rgb(232, 181, 242) 60%, rgba(0, 128, 0, 0) 0%);
 }
+
+/* #skills .skill_firebase::before {
+    background: conic-gradient(rgb(232, 181, 242) 20%, rgba(0, 128, 0, 0) 0%);
+} */
 
 #skills .skill_github::before {
     background: conic-gradient(rgb(255, 209, 168) 50%, rgba(0, 128, 0, 0) 0%);
